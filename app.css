@@ -1,3 +1,11 @@
+:root {
+  --blue: #030372;
+  --white: #ffffff;
+  --yellow: #e8c91f;
+  --black: #161616;
+}
+
+/* BODY SECTION */
 body {
   margin: 0;
   padding: 0;
@@ -5,27 +13,31 @@ body {
   font-family: "Montserrat";
 }
 
+/* MAIN SECTION */
 .main-section {
   width: 100%;
   height: 100vh;
   overflow: hidden;
 }
 
+/* HEADER SECTION */
 header {
   width: 100%;
   padding: 15px 20px;
   height: 45px;
-  background-color: #030372;
-  color: white;
+  background-color: var(--blue);
+  color: var(--white);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* MOBILE HAMBURGER SECTION */
 .hamburger-menu-container {
   display: none;
 }
 
+/* HEADER LEFT SECTION */
 .left {
   display: flex;
   gap: 50px;
@@ -36,7 +48,7 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
-  color: white;
+  color: var(--white);
 }
 
 .links {
@@ -48,7 +60,7 @@ header {
 .links label {
   font-size: 14px;
   text-decoration: none;
-  color: white;
+  color: var(--white);
   cursor: pointer;
 }
 
@@ -70,7 +82,7 @@ header {
 .links a {
   font-size: 14px;
   text-decoration: none;
-  color: white;
+  color: var(--white);
 }
 
 .link-disabled {
@@ -78,6 +90,7 @@ header {
   opacity: 0.6;
 }
 
+/* HEADER RIGHT SECTION */
 .right {
   display: flex;
   flex-direction: column;
@@ -93,7 +106,7 @@ header {
 
 .contact span {
   margin: 0;
-  color: #e8c91f;
+  color: var(--yellow);
 }
 
 .right .search {
@@ -111,9 +124,10 @@ header {
   height: 20px;
   top: 5px;
   right: 0;
-  color: #010101;
+  color: var(--black);
 }
 
+/* HERO SECTION */
 .hero {
   width: 100%;
   height: 100%;
@@ -134,20 +148,22 @@ header {
   object-fit: cover;
 }
 
+/* HERO INFO SECTION */
 .hero p {
   margin: 0 0 10px;
-  color: #030372;
+  color: var(--blue);
   font-size: 16px;
   font-weight: 500;
 }
 
 .hero h4 {
   margin: 0 0 30px;
-  color: #030372;
+  color: var(--blue);
   font-size: 34px;
   font-weight: 600;
 }
 
+/* HERO SEARCH SECTION */
 .hero-search {
   position: relative;
   display: flex;
@@ -157,20 +173,22 @@ header {
 }
 
 .hero-search a {
-  color: #010101;
+  color: var(--black);
   text-decoration: none;
 }
 
+/* HERO BEFORE TAG */
 .hero-search::before {
   content: "";
   height: 100%;
   width: 35px;
-  background-color: #e8c91f;
+  background-color: var(--yellow);
   border-bottom-left-radius: 100%;
 }
 
+/* HERO CENTER ELEMENT */
 .hero-search .center-element {
-  background-color: white;
+  background-color: var(--white);
   height: 100%;
   display: flex;
   align-items: center;
@@ -183,14 +201,18 @@ header {
   margin: 0;
 }
 
+/* HERO AFTER TAG */
 .hero-search::after {
   content: "";
   height: 100%;
   width: 120px;
-  background-color: #e8c91f;
+  background-color: var(--yellow);
   border-bottom-right-radius: 85%;
 }
 
+/* RESPONSIVE */
+/* RESPONSIVE */
+/* RESPONSIVE */
 @media screen and (max-width: 1096px) {
   .hero-search {
     width: 70%;
@@ -255,7 +277,7 @@ header {
     display: block;
     width: 25px;
     height: 25px;
-    color: rgb(255, 255, 255);
+    color: var(--white);
     margin-right: 50px;
     cursor: pointer;
   }
