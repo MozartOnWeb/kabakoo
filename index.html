@@ -1,14 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Agency</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Agency</title>
 
-  <link rel="stylesheet" href="app.css">
-</head>
-<body>
-  
-</body>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <main class="main-section">
+      <!-- HEADER SECTION -->
+      <header>
+        <div class="left">
+          <a class="logo" href="">travel agency</a>
+
+          <div class="links">
+            <a href="">Home</a>
+            <a href="">Link</a>
+
+            <label for="dropdow">Dropdow</label>
+
+            <select name="dropdow" id="dropdow">
+              <option value="Bamako">Bamako</option>
+              <option value="Segou">Segou</option>
+              <option value="Kangaba">Kangaba</option>
+              <option value="Mopti">Mopti</option>
+            </select>
+
+            <a class="link-disabled" href="">Disabled</a>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="search">
+            <input placeholder="search" type="text" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </div>
+
+          <p class="contact">Nous contacter <span>(+223)78 34 32 92</span></p>
+        </div>
+
+        <svg
+          class="hamburger-menu-container"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+          />
+        </svg>
+      </header>
+
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <img src="./assets/H.jpg" alt="hero-img" />
+        <p>Laissez nous un commentaire</p>
+
+        <h4>Les destinations de rêve</h4>
+
+        <div class="hero-search">
+          <div class="center-element">
+            <p>Afrique</p>
+
+            <label for="Tous les pays">Tous les pays</label>
+
+            <select name="pays" id="pays">
+              <option value="Mali">Mali</option>
+              <option value="Côte D'Ivoires">Côte D'Ivoires</option>
+              <option value="Burkina Faso">Burkina Faso</option>
+              <option value="Senegal">Senegal</option>
+            </select>
+
+            <label for="Prix (cfa)">Prix (cfa)</label>
+
+            <select name="price" id="price">
+              <option value="20.000">20.000</option>
+              <option value="15.000">15.000</option>
+              <option value="10.000">10.000</option>
+              <option value="5.000">5.000</option>
+            </select>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
