@@ -183,12 +183,6 @@ header {
   margin: 0;
 }
 
-.hero-search .center-element #price,
-.hero-search .center-element #pays {
-  border: 1px solid #030372;
-  padding: 2px;
-}
-
 .hero-search::after {
   content: "";
   height: 100%;
@@ -244,15 +238,6 @@ header {
     flex-direction: column;
     justify-content: center;
     gap: 15px;
-  }
-
-  .hero-search .center-element p {
-    margin-top: 20px;
-    font-weight: 600;
-  }
-
-  .hero-search .center-element #price {
-    margin-bottom: 20px;
   }
 }
 
