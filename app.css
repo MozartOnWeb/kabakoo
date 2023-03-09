@@ -52,9 +52,19 @@ header {
   cursor: pointer;
 }
 
-#dropdow {
-  border: 1px solid white;
-  padding: 2px;
+.dropdown {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown2 {
+  gap: 60px;
+}
+
+.dropdown svg {
+  width: 15px;
+  height: 15px;
 }
 
 .links a {
@@ -142,8 +152,13 @@ header {
   position: relative;
   display: flex;
   align-items: center;
-  width: 60%;
+  width: 80%;
   height: 35px;
+}
+
+.hero-search a {
+  color: #010101;
+  text-decoration: none;
 }
 
 .hero-search::before {
@@ -166,12 +181,6 @@ header {
 
 .hero-search .center-element p {
   margin: 0;
-}
-
-.hero-search .center-element #price,
-.hero-search .center-element #pays {
-  border: 1px solid #030372;
-  padding: 2px;
 }
 
 .hero-search::after {
@@ -211,6 +220,9 @@ header {
 }
 
 @media screen and (max-width: 730px) {
+  .dropdown2 {
+    gap: 10px;
+  }
   .hero-search {
     height: 200px;
   }
@@ -224,15 +236,8 @@ header {
   }
   .hero-search .center-element {
     flex-direction: column;
-  }
-
-  .hero-search .center-element p {
-    margin-top: 20px;
-    font-weight: 600;
-  }
-
-  .hero-search .center-element #price {
-    margin-bottom: 20px;
+    justify-content: center;
+    gap: 15px;
   }
 }
 
